@@ -65,7 +65,12 @@
       context.strokeStyle = cfg.totalColor;
       context.stroke();
 
-      // todo draw text
+      // draw text  
+	  context.font = '40px Arial';
+	  context.fillStyle = "#7d84a1";
+	  context.textAlign = "center";
+	  context.fillText(cfg.score, x, y + 15);
+
       return this;
 	}
 }(jQuery));
